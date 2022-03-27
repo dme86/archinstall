@@ -1,0 +1,69 @@
+{
+    "audio": "pipewire",
+    "bootloader": "systemd-bootctl",
+    "custom-commands": [
+        "cd /home/dan/; git clone https://aur.archlinux.org/yay-git.git",
+        "mkdir /home/dan/.ssh",
+        "touch /home/dan/.ssh/authorized_keys",
+        "curl https://github.com/dme86.keys | tee -a /home/dan/.ssh/authorized_keys",
+        "chmod 700 /home/dan/.ssh",
+        "chmod 600 /home/dan/.ssh/authorized_keys",
+	"chown -R dan. /home/dan",
+	"chsh --shell /bin/zsh dan",
+	"git clone https://github.com/ohmyzsh/ohmyzsh.git /home/dan/.oh-my-zsh",
+	"cp /home/dan/.oh-my-zsh/templates/zshrc.zsh-template /home/dan/.zshrc"
+    ],
+    "dry-run": false,
+    "filesystem": "btrfs",
+    "gfx_driver": "VMware / VirtualBox (open-source)",
+    "harddrives": [
+        "/dev/sda"
+    ],
+    "hostname": "archdev",
+    "kernels": [
+        "linux"
+    ],
+    "keyboard-language": "de",
+    "keyboard-layout": "de",
+    "mirror-region": {
+        "Worldwide": {
+            "http://mirror.rackspace.com/archlinux/$repo/os/$arch": true,
+            "https://mirror.rackspace.com/archlinux/$repo/os/$arch": true
+        }
+    },
+    "nic": {
+        "NetworkManager": true
+    },
+    "ntp": true,
+    "packages": [
+        "sudo",
+        "git",
+        "wget",
+        "zsh",
+        "vim",
+        "htop",
+        "openssh",
+        "pacman-contrib",
+        "reflector",
+        "fzf",
+        "etckeeper",
+        "terraform",
+        "ansible",
+        "aws-cli",
+        "kubectl",
+        "net-tools"
+    ],
+    "profile": {
+        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/minimal.py"
+    },
+    "script": "guided",
+    "services": [
+        "sshd"
+    ],
+    "silent": false,
+    "swap": false,
+    "sys-encoding": "utf-8",
+    "sys-language": "en_US",
+    "timezone": "Europe/Berlin",
+    "version": "2.3.1"
+}
