@@ -58,7 +58,10 @@
     },
     "script": "guided",
     "services": [
-        "sshd"
+        "sshd",
+	"systemd-boot-update",
+	"reflector.service",
+	"reflector.timer"
     ],
     "silent": false,
     "swap": false,
