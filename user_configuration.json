@@ -18,6 +18,8 @@
 	"wget -O /usr/local/share/fonts/ttf/meslo-nerd/MesloGS-NF-Bold.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf",
 	"wget -O /usr/local/share/fonts/ttf/meslo-nerd/MesloGS-NF-Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf",
 	"wget -O /usr/local/share/fonts/ttf/meslo-nerd/MesloGS-NF-Bold-Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf",
+	"git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /home/dan/powerlevel10k",
+	"echo 'source /home/dan/powerlevel10k/powerlevel10k.zsh-theme' >>/home/dan/.zshrc",
 	"chown -R dan. /home/dan"
     ],
     "dry-run": false,
