@@ -8,10 +8,10 @@
         "curl https://github.com/dme86.keys | tee -a /home/dan/.ssh/authorized_keys",
         "chmod 700 /home/dan/.ssh",
         "chmod 600 /home/dan/.ssh/authorized_keys",
-	"chown -R dan. /home/dan",
 	"chsh --shell /bin/zsh dan",
 	"git clone https://github.com/ohmyzsh/ohmyzsh.git /home/dan/.oh-my-zsh",
-	"cp /home/dan/.oh-my-zsh/templates/zshrc.zsh-template /home/dan/.zshrc"
+	"cp /home/dan/.oh-my-zsh/templates/zshrc.zsh-template /home/dan/.zshrc",
+	"chown -R dan. /home/dan"
     ],
     "dry-run": false,
     "filesystem": "btrfs",
